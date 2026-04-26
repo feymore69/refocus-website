@@ -67,11 +67,25 @@ import { heroHighlights, productChips, siteConfig, socialProofLine } from '~/dat
       <div class="hero-orb hero-orb-left" />
       <div class="hero-orb hero-orb-right" />
       <div class="relative z-10 rounded-[2rem] border border-white/[0.08] bg-white/[0.04] p-3 shadow-[0_40px_120px_rgba(3,8,24,0.6)] backdrop-blur-2xl">
-        <img
-          src="/refocus-desktop.png"
-          alt="Refocus desktop dashboard showing the next break timer, daily stats, status cards, and weekly adherence trend"
-          class="rounded-[1.6rem] border border-white/[0.08] shadow-[0_26px_70px_rgba(5,10,25,0.42)]"
-        >
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/refocus-desktop-640.webp 640w, /refocus-desktop-960.webp 960w, /refocus-desktop-1188.webp 1188w"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+          >
+          <img
+            src="/refocus-desktop-960.png"
+            srcset="/refocus-desktop-640.png 640w, /refocus-desktop-960.png 960w, /refocus-desktop.png 1188w"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            width="1188"
+            height="810"
+            alt="Refocus desktop dashboard showing the next break timer, daily stats, status cards, and weekly adherence trend"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            class="h-auto w-full rounded-[1.6rem] border border-white/[0.08] shadow-[0_26px_70px_rgba(5,10,25,0.42)]"
+          >
+        </picture>
 
         <div class="mt-4 grid gap-3 sm:grid-cols-2">
           <div class="glass-panel flex items-center gap-3 rounded-full px-4 py-3 text-sm text-slate-200">

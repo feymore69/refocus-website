@@ -36,10 +36,15 @@ export interface TrustCard {
 
 export const siteConfig = {
   name: 'Refocus',
+  siteUrl: 'https://re-focus.me',
+  seoTitle: 'Refocus | Free Desktop Screen Break Reminder Software',
+  seoDescription:
+    'Refocus is a free desktop screen break reminder with real schedule presets, local-only stats, Smart Pause timing, and adjustable break overlays.',
+  socialImage: '/refocus-desktop.png',
   badge: 'Free desktop app',
   headline: 'Smart screen breaks that respect your flow',
   description:
-    'Refocus is a free desktop app that helps you protect your eyes, posture, and attention without breaking flow. Set a rhythm, keep working, and let breaks arrive with better timing.',
+    'Refocus is a free desktop screen break reminder that helps you protect your eyes, posture, and attention without breaking flow. Set a rhythm, keep working, and let breaks arrive with better timing.',
   primaryCta: {
     label: 'Download for desktop',
     href: 'https://github.com/feymore69/refocus/releases',
@@ -199,6 +204,18 @@ export const faqItems: FaqItem[] = [
 
 export const socialProofLine =
   'Built from the current Refocus desktop app: live countdowns, working hours, local analytics, tray controls, strict overlays, and real schedule presets.'
+
+export const seoKeywords = [
+  'desktop screen break reminder',
+  'screen break reminder',
+  'desktop break reminder',
+  'eye strain app',
+  'focus break timer',
+  'screen time breaks',
+  'productivity break reminders',
+  'posture reminders',
+  'local-first desktop app',
+]
 
 export const featureTruthLine =
   'No invented AI claims. No made-up integrations. Just the real product, translated into a calm desktop landing page.'

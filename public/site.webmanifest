@@ -1,0 +1,21 @@
+{
+  "name": "Refocus",
+  "short_name": "Refocus",
+  "description": "Free desktop screen break reminder software with local-only stats, presets, and Smart Pause timing.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040914",
+  "theme_color": "#06101f",
+  "icons": [
+    {
+      "src": "/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

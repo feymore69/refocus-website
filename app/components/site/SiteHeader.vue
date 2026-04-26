@@ -13,6 +13,9 @@ import { headerLinks, siteConfig } from '~/data/refocus'
           <img
             src="/icon-128.png"
             alt="Refocus icon"
+            width="32"
+            height="32"
+            decoding="async"
             class="h-8 w-8 drop-shadow-[0_0_18px_rgba(106,248,223,0.35)]"
           >
         </div>

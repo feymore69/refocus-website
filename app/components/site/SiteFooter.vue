@@ -31,7 +31,7 @@ const year = new Date().getFullYear()
     </div>
 
     <p class="mt-8 text-xs tracking-[0.22em] text-slate-500 uppercase">
-      {{ `© ${year} Refocus` }}
+      {{ `Copyright ${year} Refocus` }}
     </p>
   </footer>
 </template>

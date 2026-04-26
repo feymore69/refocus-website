@@ -27,13 +27,15 @@ const isOpen = (question: string) => openQuestions.value.includes(question)
 
     <div class="mt-10 grid gap-4">
       <article
-        v-for="item in faqItems"
+        v-for="(item, index) in faqItems"
         :key="item.question"
         class="glass-panel cursor-pointer rounded-[1.7rem] transition hover:border-white/16 hover:bg-white/[0.05]"
       >
         <button
           type="button"
           class="flex w-full cursor-pointer flex-col items-start rounded-[1.7rem] px-5 py-5 text-left"
+          :aria-expanded="isOpen(item.question)"
+          :aria-controls="`faq-answer-${index}`"
           @click="toggleQuestion(item.question)"
         >
           <span
@@ -43,7 +45,8 @@ const isOpen = (question: string) => openQuestions.value.includes(question)
             {{ item.question }}
           </span>
           <p
-            v-if="isOpen(item.question)"
+            :id="`faq-answer-${index}`"
+            v-show="isOpen(item.question)"
             class="mt-4 max-w-3xl text-sm leading-7 text-slate-300"
           >
             {{ item.answer }}

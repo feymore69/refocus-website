@@ -61,7 +61,7 @@ import SectionHeading from '~/components/site/SectionHeading.vue'
             rel="noreferrer"
             class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-sky-400 via-cyan-300 to-emerald-300 px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_18px_45px_rgba(79,183,255,0.22)] transition hover:scale-[1.01]"
           >
-            Get Refocus
+            Download Refocus
             <ArrowUpRight class="h-4 w-4" />
           </a>
           <a
