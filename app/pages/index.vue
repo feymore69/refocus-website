@@ -11,7 +11,8 @@ import { faqItems, heroHighlights, productChips, seoKeywords, siteConfig } from 
 
 const config = useRuntimeConfig()
 const siteUrl = config.public.siteUrl || siteConfig.siteUrl
-const canonicalUrl = siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`
+const canonicalUrl =
+  siteUrl.length > 1 && siteUrl.endsWith('/') ? siteUrl.slice(0, -1) : siteUrl
 const seoTitle = siteConfig.seoTitle
 const seoDescription = siteConfig.seoDescription
 const socialImageUrl = `${siteUrl}${siteConfig.socialImage}`
@@ -87,8 +88,8 @@ useServerSeoMeta({
   ogDescription: seoDescription,
   ogImage: socialImageUrl,
   ogImageAlt: heroImageAlt,
-  ogImageWidth: '1188',
-  ogImageHeight: '810',
+  ogImageWidth: '1169',
+  ogImageHeight: '799',
   ogUrl: canonicalUrl,
   ogType: 'website',
   ogSiteName: siteConfig.name,
@@ -124,10 +125,10 @@ useHead({
     {
       rel: 'preload',
       as: 'image',
-      href: '/refocus-desktop-960.webp',
+      href: '/refocus-app-960.webp',
       type: 'image/webp',
       imagesrcset:
-        '/refocus-desktop-640.webp 640w, /refocus-desktop-960.webp 960w, /refocus-desktop-1188.webp 1188w',
+        '/refocus-app-640.webp 640w, /refocus-app-960.webp 960w, /refocus-app.png 1169w',
       imagesizes: '(min-width: 1024px) 50vw, 100vw',
     },
   ],

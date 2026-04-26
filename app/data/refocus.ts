@@ -40,7 +40,7 @@ export const siteConfig = {
   seoTitle: 'Refocus | Free Desktop Screen Break Reminder Software',
   seoDescription:
     'Refocus is a free desktop screen break reminder with real schedule presets, local-only stats, Smart Pause timing, and adjustable break overlays.',
-  socialImage: '/refocus-desktop.png',
+  socialImage: '/refocus-app.png',
   badge: 'Free desktop app',
   headline: 'Smart screen breaks that respect your flow',
   description:
