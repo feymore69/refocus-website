@@ -47,7 +47,7 @@ export const siteConfig = {
     'Refocus is a free desktop screen break reminder that helps you protect your eyes, posture, and attention without breaking flow. Set a rhythm, keep working, and let breaks arrive with better timing.',
   primaryCta: {
     label: 'Download for desktop',
-    href: 'https://github.com/feymore69/refocus/releases/download/v0.2.1/Refocus_0.2.1_x64-setup.exe',
+    href: 'https://github.com/feymore69/refocus/releases/download/v0.2.4/Refocus_0.2.4_x64-setup.exe',
   },
   secondaryCta: {
     label: 'See the desktop flow',
