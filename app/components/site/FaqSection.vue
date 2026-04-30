@@ -22,7 +22,7 @@ const isOpen = (question: string) => openQuestions.value.includes(question)
     <SectionHeading
       eyebrow="FAQ"
       title="The questions a careful desktop user will ask."
-      description="Because Refocus is free and runs locally, the site should answer scope, privacy, and strictness questions directly instead of trying to smooth them over."
+      description="If someone is comparing Windows break reminder apps, this section answers 20-20-20, privacy, strictness, and local-data questions directly instead of trying to smooth them over."
     />
 
     <div class="mt-10 grid gap-4">

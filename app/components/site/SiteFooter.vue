@@ -12,7 +12,7 @@ const year = new Date().getFullYear()
           Refocus
         </p>
         <p class="mt-2 text-sm text-slate-400">
-          Free desktop break reminders that stay calm, local, and honest.
+          Free Windows desktop break reminders that stay calm, local, and honest.
         </p>
       </div>
 

@@ -7,7 +7,7 @@ import SiteFooter from '~/components/site/SiteFooter.vue'
 import SiteHeader from '~/components/site/SiteHeader.vue'
 import TrustSection from '~/components/site/TrustSection.vue'
 import WorkflowSection from '~/components/site/WorkflowSection.vue'
-import { faqItems, heroHighlights, productChips, seoKeywords, siteConfig } from '~/data/refocus'
+import { currentVersion, faqItems, heroHighlights, productChips, seoKeywords, siteConfig } from '~/data/refocus'
 
 const config = useRuntimeConfig()
 const siteUrl = config.public.siteUrl || siteConfig.siteUrl
@@ -18,7 +18,6 @@ const seoDescription = siteConfig.seoDescription
 const socialImageUrl = `${siteUrl}${siteConfig.socialImage}`
 const heroImageAlt =
   'Refocus desktop dashboard showing the next break timer, daily stats, status cards, and weekly adherence trend'
-
 const schemaGraph = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -51,6 +50,10 @@ const schemaGraph = {
       url: canonicalUrl,
       description: seoDescription,
       applicationCategory: 'ProductivityApplication',
+      applicationSubCategory: 'Screen Break Reminder',
+      operatingSystem: 'Windows',
+      softwareVersion: currentVersion,
+      inLanguage: 'en',
       isAccessibleForFree: true,
       downloadUrl: siteConfig.primaryCta.href,
       screenshot: socialImageUrl,
@@ -99,6 +102,11 @@ useServerSeoMeta({
   twitterDescription: seoDescription,
   twitterImage: socialImageUrl,
   twitterImageAlt: heroImageAlt,
+  author: siteConfig.name,
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  applicationName: siteConfig.name,
+  category: 'Productivity Software',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
   keywords: seoKeywords.join(', '),
 })
@@ -115,6 +123,11 @@ useHead({
     {
       rel: 'alternate',
       hreflang: 'en',
+      href: canonicalUrl,
+    },
+    {
+      rel: 'alternate',
+      hreflang: 'en-US',
       href: canonicalUrl,
     },
     {

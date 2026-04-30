@@ -8,7 +8,7 @@ import SectionHeading from '~/components/site/SectionHeading.vue'
     <SectionHeading
       eyebrow="What Ships Today"
       title="Built from the actual desktop product, not imaginary marketing feature lists."
-      description="These sections map directly to the Refocus app's real countdowns, overlay behavior, desktop controls, settings model, and local analytics."
+      description="These sections map directly to the Refocus Windows app's real countdowns, screen break overlays, desktop controls, working hours, settings model, and local analytics."
     />
 
     <div class="mt-10 grid gap-5 lg:grid-cols-2 xl:grid-cols-3">

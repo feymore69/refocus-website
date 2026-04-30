@@ -9,7 +9,7 @@ import SectionHeading from '~/components/site/SectionHeading.vue'
       <SectionHeading
         eyebrow="Starting Rhythms"
         title="Start with a preset that fits how you work, then shape the rest around it."
-        description="Refocus already ships named schedule presets in the desktop app, so the website can lead with real options instead of generic productivity filler."
+        description="Refocus already ships named schedule presets in the Windows desktop app, including a 20-20-20 starting point for eye break reminders and longer focus sessions."
       />
 
       <div class="grid gap-4">

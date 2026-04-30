@@ -8,7 +8,7 @@ import SectionHeading from '~/components/site/SectionHeading.vue'
     <SectionHeading
       eyebrow="How It Works"
       title="A calmer desktop routine in three steps."
-      description="Refocus is designed to protect long sessions without making every reminder feel dramatic. The flow below mirrors the real app behavior already present in the repository."
+      description="Refocus is a Windows screen break reminder built to reduce eye strain, support posture, and protect focus during long work sessions. The flow below mirrors the real app behavior already present in the repository."
     />
 
     <div class="mt-10 grid gap-5 lg:grid-cols-3">

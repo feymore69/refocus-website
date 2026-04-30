@@ -11,7 +11,7 @@ import SectionHeading from '~/components/site/SectionHeading.vue'
         <SectionHeading
           eyebrow="Privacy And Product Truth"
           title="Local-first, honest, and careful about what the app really does."
-          description="Refocus already contains strong privacy language in the desktop app, and it is one of the best trust signals this product has. The website leans into that instead of hiding it."
+          description="Refocus is a local-first Windows desktop app, so the site can be specific about privacy, screen break timing, working hours, local history, and what Smart Pause really does."
         />
 
         <div class="mt-10 grid gap-4 md:grid-cols-3 xl:grid-cols-1">

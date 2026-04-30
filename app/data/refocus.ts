@@ -34,20 +34,25 @@ export interface TrustCard {
   body: string
 }
 
+export const currentVersion = '0.2.5'
+const currentInstallerName = `Refocus_${currentVersion}_x64-setup.exe`
+const currentInstallerUrl =
+  `https://github.com/feymore69/refocus/releases/download/v${currentVersion}/${currentInstallerName}`
+
 export const siteConfig = {
   name: 'Refocus',
   siteUrl: 'https://re-focus.me',
-  seoTitle: 'Refocus | Free Desktop Screen Break Reminder Software',
+  seoTitle: 'Refocus | Free Windows Screen Break Reminder & 20-20-20 App',
   seoDescription:
-    'Refocus is a free desktop screen break reminder with real schedule presets, local-only stats, Smart Pause timing, and adjustable break overlays.',
+    'Refocus is a free Windows screen break reminder app with a 20-20-20 preset, Smart Pause, local history, and calm break overlays for eyes, posture, and focus.',
   socialImage: '/refocus-app.png',
-  badge: 'Free desktop app',
+  badge: 'Free Windows desktop app',
   headline: 'Smart screen breaks that respect your flow',
   description:
-    'Refocus is a free desktop screen break reminder that helps you protect your eyes, posture, and attention without breaking flow. Set a rhythm, keep working, and let breaks arrive with better timing.',
+    'Refocus is a free Windows screen break reminder and 20-20-20 app that helps protect your eyes, posture, and focus without breaking flow. Set a rhythm, keep working, and let breaks arrive with better timing.',
   primaryCta: {
-    label: 'Download for desktop',
-    href: 'https://github.com/feymore69/refocus/releases/download/v0.2.4/Refocus_0.2.4_x64-setup.exe',
+    label: 'Download for Windows',
+    href: currentInstallerUrl,
   },
   secondaryCta: {
     label: 'See the desktop flow',
@@ -56,7 +61,7 @@ export const siteConfig = {
 }
 
 export const heroHighlights = [
-  '20-20-20, Pomodoro Soft, Deep Work, and Marathon presets',
+  '20-20-20 break reminders, Pomodoro Soft, Deep Work, and Marathon presets',
   'Idle-aware timing and typing-aware Smart Pause',
   'Modal or full-screen breaks with an optional enforced mode',
   'Local-only stats, history, tray controls, and hotkey support',
@@ -94,16 +99,16 @@ export const featureGroups: FeatureGroup[] = [
   {
     icon: AlarmClockCheck,
     title: 'Timing that stays out of the way',
-    body: 'Refocus starts with a real schedule system instead of a single countdown and a guilt trip.',
+    body: 'Refocus starts with a real screen break timer and schedule system instead of a single countdown and a guilt trip.',
     points: [
-      'Choose a starting rhythm, then tune work interval, break duration, and snooze time.',
+      'Choose a starting rhythm, then tune work interval, break duration, and snooze time for the kind of work you actually do.',
       'Set weekday working hours, including overnight schedules, so reminders only land during active time.',
       'Pause reminders for a while, resume the schedule, or trigger a break immediately when you need one.',
     ],
   },
   {
     icon: Keyboard,
-    title: 'Smart Pause, but only where it is real',
+    title: 'Smart Pause for real desktop work',
     body: 'The current build focuses on local activity signals that are actually wired into the product today.',
     points: [
       'Optionally pause the timer while you are idle so only active desk time counts toward the next break.',
@@ -124,7 +129,7 @@ export const featureGroups: FeatureGroup[] = [
   {
     icon: ChartColumnIncreasing,
     title: 'Local proof that the habit is working',
-    body: 'Refocus tracks the signals you need to stay honest without shipping your workday to a server.',
+    body: 'Refocus tracks the signals you need from a screen break reminder app without shipping your workday to a server.',
     points: [
       'See focused time, adherence, taken versus skipped breaks, longest streak, and a weekly trend at a glance.',
       'Review a local timeline of completed, skipped, and snoozed events with timestamps and reminder context.',
@@ -165,7 +170,7 @@ export const trustCards: TrustCard[] = [
   {
     icon: ShieldCheck,
     title: 'Local-first by default',
-    body: 'The current build stores settings, schedules, timestamps, and break history on-device. No analytics, ads, or cloud sync are included.',
+    body: 'The current Windows build stores settings, schedules, timestamps, and break history on-device. No analytics, ads, or cloud sync are included.',
   },
   {
     icon: Eye,
@@ -180,6 +185,16 @@ export const trustCards: TrustCard[] = [
 ]
 
 export const faqItems: FaqItem[] = [
+  {
+    question: 'Is Refocus a Windows screen break reminder app?',
+    answer:
+      'Yes. The current public download is a Windows desktop installer, and the live app includes tray behavior, countdowns, break popups, working hours, and local history.',
+  },
+  {
+    question: 'Can Refocus help with the 20-20-20 rule, eye strain, and posture?',
+    answer:
+      'Refocus includes a 20-20-20 preset and customizable reminder timing to prompt short visual resets. It is a desktop reminder tool for healthier work habits, not a medical device.',
+  },
   {
     question: 'What does Smart Pause actually do right now?',
     answer:
@@ -203,17 +218,27 @@ export const faqItems: FaqItem[] = [
 ]
 
 export const socialProofLine =
-  'Built from the current Refocus desktop app: live countdowns, working hours, local analytics, tray controls, strict overlays, and real schedule presets.'
+  'Built from the current Refocus Windows desktop app: live countdowns, working hours, local analytics, tray controls, strict overlays, and real schedule presets.'
 
 export const seoKeywords = [
+  'windows screen break reminder',
   'desktop screen break reminder',
   'screen break reminder',
   'desktop break reminder',
+  'screen break app for windows',
+  'windows break reminder app',
+  '20-20-20 app',
+  '20-20-20 reminder',
+  'eye break reminder app',
   'eye strain app',
+  'computer break timer',
+  'work break timer',
+  'screen time reminder windows',
   'focus break timer',
   'screen time breaks',
   'productivity break reminders',
   'posture reminders',
+  'windows productivity app',
   'local-first desktop app',
 ]
 
@@ -223,7 +248,7 @@ export const featureTruthLine =
 export const footerLinks = [
   { label: 'Desktop app repo', href: 'https://github.com/feymore69/refocus' },
   { label: 'Website repo', href: 'https://github.com/feymore69/refocus-website' },
-  { label: 'Desktop releases', href: 'https://github.com/feymore69/refocus/releases' },
+  { label: 'Windows installer', href: siteConfig.primaryCta.href },
 ]
 
 export const headerLinks = [
@@ -235,7 +260,7 @@ export const headerLinks = [
 
 export const callout = {
   eyebrow: 'Desktop-first, calm by design',
-  title: 'Protect your eyes, posture, and focus without turning work into a punishment loop.',
+  title: 'A Windows screen break app that helps protect your eyes, posture, and focus.',
   body:
-    'Refocus already ships real countdowns, real overlays, and real history. The launch link below points straight to the desktop release feed so people can install the app directly.',
+    'Refocus already ships real countdowns, real overlays, and real history. The download link below points straight to the current Windows installer so people can install the app directly.',
 }

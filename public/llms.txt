@@ -4,16 +4,18 @@
 
 ## Canonical URL
 
-- https://re-focus.me/
+- https://re-focus.me
 
 ## Summary
 
-Refocus is a local-first desktop app for scheduled screen breaks. It ships real named presets, working hours, local-only history, Smart Pause timing based on local activity, and adjustable break overlays ranging from gentle popups to stricter full-screen breaks.
+Refocus is a local-first Windows desktop app for scheduled screen breaks. It ships real named presets, including 20-20-20, working hours, local-only history, Smart Pause timing based on local activity, and adjustable break overlays ranging from gentle popups to stricter full-screen breaks.
 
 ## Product facts
 
 - Free desktop app
+- Windows screen break reminder
 - Local-only settings and history
+- Includes a 20-20-20 preset for short visual resets
 - Smart Pause uses idle-aware timing and typing-aware deferral in the current build
 - Break presets include 20-20-20, Pomodoro Soft, Deep Work, and Marathon
 - Break modes include modal and full-screen overlays with optional strict protections
@@ -21,7 +23,7 @@ Refocus is a local-first desktop app for scheduled screen breaks. It ships real 
 
 ## Important links
 
-- Website: https://re-focus.me/
-- Download: https://github.com/feymore69/refocus/releases
+- Website: https://re-focus.me
+- Download: https://github.com/feymore69/refocus/releases/download/v0.2.5/Refocus_0.2.5_x64-setup.exe
 - Desktop app repository: https://github.com/feymore69/refocus
 - Website repository: https://github.com/feymore69/refocus-website

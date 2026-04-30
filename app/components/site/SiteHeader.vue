@@ -24,7 +24,7 @@ import { headerLinks, siteConfig } from '~/data/refocus'
             Refocus
           </p>
           <p class="text-xs tracking-[0.24em] text-slate-400 uppercase">
-            Desktop break reminders
+            Windows break reminders
           </p>
         </div>
       </a>
